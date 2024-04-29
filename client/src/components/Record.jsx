@@ -117,6 +117,7 @@ export default function Record() {
                     placeholder="Item Name"
                     value={form.item}
                     onChange={(e) => updateForm({ item: e.target.value })}
+                    required
                   />
                 </div>
               </div>
@@ -138,6 +139,7 @@ export default function Record() {
                     placeholder="Quantity in stock"
                     value={form.quantity}
                     onChange={(e) => updateForm({ quantity : e.target.value })}
+                    required
                   />
                 </div>
               </div>

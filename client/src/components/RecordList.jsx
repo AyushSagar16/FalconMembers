@@ -10,8 +10,7 @@ const Record = (props) => (
       {props.record.quantity}
     </td>
     <td className="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">
-      <a href={props.record.link} target="_blank"><u>{props.record.item}</u></a>
-      {/* {props.record.link} */}
+      {props.record.link === "" ? "No Link Added Yet" : <a href={props.record.link} target="_blank"><u>{props.record.item}</u></a>}
     </td>
     <td className="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">
       <div className="flex gap-2">
